@@ -1,0 +1,43 @@
+.footer {
+    padding: 15px 0; /* Padding for spacing */
+    background-color: #f8f9fa; /* Light background for a clean look */
+    border-top: 5px solid #007bff; /* Bold top border in blue for emphasis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.footer .footer-item {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+.footer .footer-icon {
+    color: #343a40; /* Dark color for text and icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer .footer-icon:hover {
+    color: #007bff; /* Blue color on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.footer .footer-icon p {
+    margin: 5px 0 0; /* Adjusted margin for better spacing */
+    font-size: 1rem; /* Normal size for text */
+    font-weight: 600; /* Semi-bold text */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.footer .footer-icon:hover p {
+    color: #007bff; /* Blue color on hover for text */
+}
+
+.footer .row {
+    flex-wrap: nowrap; /* Prevent wrapping on small screens */
+}
+
+.footer .col {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center align items */
+    padding: 10px; /* Padding for better spacing */
+}
