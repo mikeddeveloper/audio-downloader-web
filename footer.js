@@ -6,7 +6,7 @@ const footerItems = [
     { id: "ministration", icon: "fas fa-praying-hands", label: "Ministration", url: "ministration.html" },
     { id: "testimony", icon: "fas fa-comment-dots", label: "Testimony", url: "testimony.html" },
     { id: "bible-reading", icon: "fas fa-book", label: "Bible Reading", url: "bible-reading.html" },
-    { id: "videos", icon: "fas fa-video", label: "Videos", url: "videos.html" },
+    { id: "videos", icon: "fas fa-video", label: "Videos", url: "https://www.youtube.com/results?search_query=mfm+tv" },
 ];
 
 // Get the footer content container
