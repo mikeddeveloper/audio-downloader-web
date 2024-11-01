@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
+    <title>Arrow Messages</title>
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for the page */
+            font-family: Arial, sans-serif; /* Clean font style */
+        }
+        .navbar {
+            background-color: #343a40; /* Dark navbar background */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* White text for navbar */
+        }
+        .section-title {
+            text-decoration: underline; /* Underline for section title */
+            margin-bottom: 20px; /* Space below title */
+        }
+        .message-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            margin-bottom: 20px; /* Space between cards */
+        }
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .play-btn {
+            background-color: #28a745; /* Green background for play button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .play-btn:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+        .download-btn i, .play-btn i {
+            margin-right: 5px; /* Space between icon and text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">MFM Ayobo Sermon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ro-messages.html">RO Messages</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="arrow-messages.html">Arrow Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Arrow Messages Section -->
+    <div class="container mt-5 pt-5">
+        <h2 class="text-center text-3xl font-bold section-title text-blue-600">Arrow Messages</h2>
+        
+        <div class="message-card">
+            <h3 class="text-2xl font-semibold">Message Title 1</h3>
+            <div class="audio-controls">
+                <audio id="audio1" src="arrow-message1.mp3"></audio>
+                <button class="play-btn" onclick="document.getElementById('audio1').play();">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <a href="arrow-message1.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <div class="message-card">
+            <h3 class="text-2xl font-semibold">Message Title 2</h3>
+            <div class="audio-controls">
+                <audio id="audio2" src="arrow-message2.mp3"></audio>
+                <button class="play-btn" onclick="document.getElementById('audio2').play();">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <a href="arrow-message2.mp3" download class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+
+        <!-- Add more messages as needed -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,43 +1,44 @@
 .footer {
-    padding: 15px 0; /* Padding for spacing */
-    background-color: #f8f9fa; /* Light background for a clean look */
-    border-top: 5px solid #007bff; /* Bold top border in blue for emphasis */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #343a40; /* Dark footer */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for footer */
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Ensure footer is positioned correctly */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    margin-left: calc(50% - 50vw); /* Center the footer */
+    text-align: center; /* Center text */
+}
+.footer-icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 0; /* No extra margin */
+    padding: 0 15px; /* Add padding for responsiveness */
+}
+.footer-icon {
+    margin: 15px; /* Space between icons */
+    text-align: center; /* Center text below each icon */
+}
+.footer-icon i {
+    font-size: 2.5rem; /* Adjusted icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+.footer-icon i:hover {
+    color: #0056b3; /* Change color on hover */
+}
+.footer-icon div {
+    font-size: 1rem; /* Adjusted label size */
+    color: #ffffff; /* Label color */
 }
 
-.footer .footer-item {
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition effects */
-}
-
-.footer .footer-icon {
-    color: #343a40; /* Dark color for text and icons */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.footer .footer-icon:hover {
-    color: #007bff; /* Blue color on hover */
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
-.footer .footer-icon p {
-    margin: 5px 0 0; /* Adjusted margin for better spacing */
-    font-size: 1rem; /* Normal size for text */
-    font-weight: 600; /* Semi-bold text */
-    transition: color 0.3s ease; /* Smooth transition for text color */
-}
-
-.footer .footer-icon:hover p {
-    color: #007bff; /* Blue color on hover for text */
-}
-
-.footer .row {
-    flex-wrap: nowrap; /* Prevent wrapping on small screens */
-}
-
-.footer .col {
-    display: flex;
-    flex-direction: column; /* Stack icon and text vertically */
-    align-items: center; /* Center align items */
-    justify-content: center; /* Center align items */
-    padding: 10px; /* Padding for better spacing */
+@media (max-width: 576px) {
+    .footer-icon i {
+        font-size: 2rem; /* Smaller icon size on mobile */
+    }
+    .footer-icon div {
+        font-size: 0.8rem; /* Smaller text on mobile */
+    }
 }

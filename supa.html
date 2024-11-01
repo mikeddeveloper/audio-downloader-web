@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Audio Messages</title>
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background */
+            font-family: Arial, sans-serif; /* Clean font */
+            margin: 0; /* Remove default margin */
+            padding-bottom: 80px; /* Space for footer */
+        }
+        .navbar {
+            background-color: #343a40; /* Dark navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* White text for navbar */
+        }
+        .footer {
+            background-color: #343a40; /* Dark footer */
+            color: white; /* White text */
+            padding: 20px 0; /* Padding for footer */
+            width: 100%; /* Full width */
+            text-align: center; /* Center text */
+        }
+        .footer-icons {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the icons */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin: 0; /* No extra margin */
+        }
+        .footer-icon {
+            margin: 15px; /* Space between icons */
+            text-align: center; /* Center text below each icon */
+        }
+        .footer-icon i {
+            font-size: 2.5rem; /* Adjusted icon size */
+            margin-bottom: 5px; /* Space between icon and text */
+            color: #007bff; /* Icon color */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .footer-icon i:hover {
+            color: #0056b3; /* Change color on hover */
+        }
+        .footer-icon div {
+            font-size: 1rem; /* Adjusted label size */
+            color: #ffffff; /* Label color */
+        }
+
+        @media (max-width: 576px) {
+            .footer-icon i {
+                font-size: 2rem; /* Smaller icon size on mobile */
+            }
+            .footer-icon div {
+                font-size: 0.8rem; /* Smaller text on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">Audio Messages</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+        <h2 class="section-title">Download and Play Audio Messages</h2>
+        <!-- Content goes here -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-icons">
+                <div class="footer-icon">
+                    <i class="fas fa-music"></i>
+                    <div>Choir Administration</div>
+                </div>
+                <div class="footer-icon">
+                    <i class="fas fa-paper-plane"></i>
+                    <div>Go Message</div>
+                </div>
+                <div class="footer-icon">
+                    <i class="fas fa-video"></i>
+                    <div>Video</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

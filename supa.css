@@ -1,0 +1,37 @@
+.audio-download {
+    background-color: #f1f1f1; /* Soft background color */
+    border-top: 5px solid #28a745; /* Top border for emphasis */
+}
+
+.audio-download .card {
+    border-radius: 15px; /* Round corners for cards */
+    transition: transform 0.3s;
+}
+
+.audio-download .audio-item:hover .card {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.audio-download .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.audio-download .btn-success {
+    background-color: #28a745; /* Match with your theme */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.audio-download .btn-success:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.audio-download header h2 {
+    font-size: 2.5rem; /* Larger main heading */
+}
+
+.audio-download header p {
+    font-size: 1.25rem; /* Slightly larger subheading */
+    color: #555; /* Softer color for the subheading */
+}
